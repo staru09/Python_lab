@@ -12,10 +12,8 @@ def calculate_bill(gems, prices, purchase_list):
     
     return total_bill
 
-
 gems = ["Ruby", "Emerald", "Sapphire", "Diamond", "Opal"]
 prices = [5000, 7000, 6000, 10000, 4000]
-
 
 purchase_list = {}
 while True:

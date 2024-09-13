@@ -1,9 +1,7 @@
 def find_max_number(num1, num2):
     if num1 >= num2:
         return -1
-    
     valid_numbers = []
-
     for num in range(num1, num2 + 1):
         if 10 <= num <= 99:
             if sum(int(digit) for digit in str(num)) % 3 == 0:

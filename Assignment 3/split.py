@@ -6,10 +6,7 @@ def list_to_string(items):
     else:
         return ', '.join(items[:-1]) + ', and ' + items[-1]
 
-
 user_input = input("Enter a list of items separated by commas: ")
-
 items = [item.strip() for item in user_input.split(',')]
-
 result = list_to_string(items)
 print(result)

@@ -1,5 +1,4 @@
 def generate_ticket_numbers(src, dest, passenger_count):
-    # Define constants
     airline = "AI"
     src_code = src[:3].upper()  
     dest_code = dest[:3].upper()  
