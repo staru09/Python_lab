@@ -21,4 +21,3 @@ srcstr = 'abcdef'
 dststr = 'mno'
 string = 'abcdefghi'
 print(tr(srcstr, dststr, string))
-
