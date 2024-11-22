@@ -1,7 +1,6 @@
 import sqlite3
 
 try:
-    # Connect to SQLite database
     sqliteConnection = sqlite3.connect('sql.db')
     cursor = sqliteConnection.cursor()
     print('DB Init')
@@ -11,6 +10,11 @@ try:
     cursor.execute(query)
     result = cursor.fetchall()
     print('SQLite Version is {}'.format(result))
+
+    # Drop the Employee table if it exists to avoid duplication of data
+    drop_table_query = 'DROP TABLE IF EXISTS Employee;'
+    cursor.execute(drop_table_query)
+    print('Employee table dropped if it existed.')
 
     # Create Employee table
     create_table_query = '''
